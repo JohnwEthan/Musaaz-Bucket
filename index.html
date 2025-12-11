@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musaaz - Legacy of Mumbai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Lato"', 'sans-serif'],
+              serif: ['"Playfair Display"', 'serif'],
+              display: ['"Cinzel"', 'serif'],
+              script: ['"Great Vibes"', 'cursive'],
+            },
+            colors: {
+              maroon: {
+                500: '#9A1B30',
+                700: '#800020',
+                800: '#5A0515',
+                900: '#2A0404',
+              },
+              gold: {
+                100: '#FCF6BA',
+                400: '#E8C26E',
+                500: '#D4AF37',
+                600: '#B59023',
+              },
+              ivory: '#FDFBF7',
+            },
+            animation: {
+              'slow-zoom': 'slow-zoom 20s linear infinite alternate',
+              'fade-in-up': 'fade-in-up 1s ease-out forwards',
+              'gentle-bounce': 'gentle-bounce 3s infinite ease-in-out',
+              'shine': 'shine 3s infinite',
+            },
+            keyframes: {
+              'slow-zoom': {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.15)' },
+              },
+              'fade-in-up': {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              'gentle-bounce': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
+              'shine': {
+                '0%': { left: '-100%' },
+                '20%': { left: '100%' },
+                '100%': { left: '100%' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@supabase/supabase-js": "https://aistudiocdn.com/@supabase/supabase-js@^2.86.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#2A0404] text-[#FDFBF7] antialiased selection:bg-gold-400 selection:text-maroon-900">
+    <div id="root"></div>
+  </body>
+</html>
